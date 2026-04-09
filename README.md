@@ -126,8 +126,8 @@ docker compose down -v
 Linux / macOS (Bash)
 bash
 # 1. Клонируем репозиторий
-git clone <your-repo-url>
-cd test-task-for-junior-backend-developer
+git clone https://github.com/ZeAs4c/task-service-api.git
+cd task-service-api
 
 # 2. Запускаем через Docker Compose
 docker compose up --build
