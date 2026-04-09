@@ -64,25 +64,23 @@
 
 ## Архитектура проекта
 cmd/
-└── api/ # Точка входа, DI
+  api/ # Точка входа, DI
 
 internal/
-├── domain/
-│ └── task/ # Бизнес-сущности (Task, RecurrenceRule)
-├── usecase/
-│ └── task/ # Сценарии использования (сервисный слой)
-├── repository/
-│ └── postgres/ # Реализация репозитория (pgx)
-├── infrastructure/
-│ └── postgres/ # Пул соединений с БД
-└── transport/
-└── http/
-├── handlers/ # HTTP хендлеры
-└── docs/ # Swagger UI + openapi.json
+  domain/
+  task/ # Бизнес-сущности (Task, RecurrenceRule)
+  usecase/
+  task/ # Сценарии использования (сервисный слой)
+  repository/
+  postgres/ # Реализация репозитория (pgx)
+  infrastructure/
+  postgres/ # Пул соединений с БД
+  transport/
+  http/
+  handlers/ # HTTP хендлеры
+  docs/ # Swagger UI + openapi.json
 
 migrations/ # SQL миграции
-
-text
 
 **Принципы:**
 - Зависимости направлены внутрь (domain ← usecase ← repository/transport)
