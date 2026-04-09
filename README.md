@@ -261,10 +261,10 @@ page	int	1	-
 page_size	int	20	100
 Типы периодичности (recurrence_type)
 Тип	Поле в recurrence_rule	Пример
-daily	interval (int)	{"interval": 2} — каждый 2-й день
-monthly	day_of_month (int, 1–31)	{"day_of_month": 15} — 15-го числа
+daily	interval (int)	{"interval": 2} - каждый 2-й день
+monthly	day_of_month (int, 1–31)	{"day_of_month": 15} - 15-го числа
 specific_dates	dates ([]string)	{"dates": ["2026-04-10", "2026-04-20"]}
-parity	parity ("even" | "odd")	{"parity": "odd"} — только нечётные дни
+parity	parity ("even" | "odd")	{"parity": "odd"} - только нечётные дни
 💡 Примеры запросов (все варианты)
 1. Обычная задача
 PowerShell:
